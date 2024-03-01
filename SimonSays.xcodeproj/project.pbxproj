@@ -14,6 +14,12 @@
 		1B743FB72B906C1500B3D68B /* SimonSaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B743FB62B906C1500B3D68B /* SimonSaysTests.swift */; };
 		1B743FC12B906C1500B3D68B /* SimonSaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B743FC02B906C1500B3D68B /* SimonSaysUITests.swift */; };
 		1B743FC32B906C1500B3D68B /* SimonSaysUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B743FC22B906C1500B3D68B /* SimonSaysUITestsLaunchTests.swift */; };
+		1B743FD02B906DAE00B3D68B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B743FCF2B906DAE00B3D68B /* Storyboard.storyboard */; };
+		1BB10FE82B919168008FF53A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB10FE72B919168008FF53A /* ViewController.swift */; };
+		1BB10FED2B91A6BA008FF53A /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1BB10FE92B91A6BA008FF53A /* 4.wav */; };
+		1BB10FEE2B91A6BA008FF53A /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1BB10FEA2B91A6BA008FF53A /* 2.wav */; };
+		1BB10FEF2B91A6BA008FF53A /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1BB10FEB2B91A6BA008FF53A /* 3.wav */; };
+		1BB10FF02B91A6BA008FF53A /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1BB10FEC2B91A6BA008FF53A /* 1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		1B743FBC2B906C1500B3D68B /* SimonSaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonSaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B743FC02B906C1500B3D68B /* SimonSaysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysUITests.swift; sourceTree = "<group>"; };
 		1B743FC22B906C1500B3D68B /* SimonSaysUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSaysUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B743FCF2B906DAE00B3D68B /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1BB10FE72B919168008FF53A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BB10FE92B91A6BA008FF53A /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		1BB10FEA2B91A6BA008FF53A /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		1BB10FEB2B91A6BA008FF53A /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		1BB10FEC2B91A6BA008FF53A /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 		1B743F982B906C1400B3D68B = {
 			isa = PBXGroup;
 			children = (
+				1BB10FE62B919109008FF53A /* Storyboardfiles */,
 				1B743FA32B906C1400B3D68B /* SimonSays */,
 				1B743FB52B906C1500B3D68B /* SimonSaysTests */,
 				1B743FBF2B906C1500B3D68B /* SimonSaysUITests */,
@@ -97,6 +110,7 @@
 			children = (
 				1B743FA42B906C1400B3D68B /* SimonSaysApp.swift */,
 				1B743FA62B906C1400B3D68B /* ContentView.swift */,
+				1BB10FF12B91A6D6008FF53A /* Sounds */,
 				1B743FA82B906C1500B3D68B /* Assets.xcassets */,
 				1B743FAA2B906C1500B3D68B /* SimonSays.entitlements */,
 				1B743FAB2B906C1500B3D68B /* Preview Content */,
@@ -127,6 +141,26 @@
 				1B743FC22B906C1500B3D68B /* SimonSaysUITestsLaunchTests.swift */,
 			);
 			path = SimonSaysUITests;
+			sourceTree = "<group>";
+		};
+		1BB10FE62B919109008FF53A /* Storyboardfiles */ = {
+			isa = PBXGroup;
+			children = (
+				1B743FCF2B906DAE00B3D68B /* Storyboard.storyboard */,
+				1BB10FE72B919168008FF53A /* ViewController.swift */,
+			);
+			path = Storyboardfiles;
+			sourceTree = "<group>";
+		};
+		1BB10FF12B91A6D6008FF53A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1BB10FEC2B91A6BA008FF53A /* 1.wav */,
+				1BB10FEA2B91A6BA008FF53A /* 2.wav */,
+				1BB10FEB2B91A6BA008FF53A /* 3.wav */,
+				1BB10FE92B91A6BA008FF53A /* 4.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +226,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					1,
+				);
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
@@ -233,8 +270,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB10FEF2B91A6BA008FF53A /* 3.wav in Resources */,
+				1BB10FF02B91A6BA008FF53A /* 1.wav in Resources */,
 				1B743FAD2B906C1500B3D68B /* Preview Assets.xcassets in Resources */,
+				1BB10FED2B91A6BA008FF53A /* 4.wav in Resources */,
 				1B743FA92B906C1500B3D68B /* Assets.xcassets in Resources */,
+				1BB10FEE2B91A6BA008FF53A /* 2.wav in Resources */,
+				1B743FD02B906DAE00B3D68B /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB10FE82B919168008FF53A /* ViewController.swift in Sources */,
 				1B743FA72B906C1400B3D68B /* ContentView.swift in Sources */,
 				1B743FA52B906C1400B3D68B /* SimonSaysApp.swift in Sources */,
 			);
@@ -428,6 +471,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -464,6 +508,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
