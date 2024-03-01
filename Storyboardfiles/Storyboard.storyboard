@@ -16,11 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wA-v6-SwA">
-                                <rect key="frame" x="140.66666666666666" y="387.66666666666669" width="112" height="102"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="play"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KL9-6X-5HV">
                                 <rect key="frame" x="143.66666666666666" y="129" width="105.66666666666666" height="42"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="32"/>
@@ -59,6 +54,14 @@
                                     <action selector="soundBTNPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aMT-4g-VKk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wA-v6-SwA" userLabel="StartGameBTN">
+                                <rect key="frame" x="140.66666666666666" y="387.66666666666669" width="112" height="102"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play"/>
+                                <connections>
+                                    <action selector="startGame:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wZK-13-MUW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -79,10 +82,11 @@
                     </view>
                     <connections>
                         <outlet property="LevelLabel" destination="KL9-6X-5HV" id="FG1-vC-VMb"/>
-                        <outletCollection property="soundBTN" destination="uFM-C7-j8E" collectionClass="NSMutableArray" id="YyN-3D-KGg"/>
-                        <outletCollection property="soundBTN" destination="rt6-ZN-NfF" collectionClass="NSMutableArray" id="D30-6b-Xtt"/>
-                        <outletCollection property="soundBTN" destination="woo-sx-dmf" collectionClass="NSMutableArray" id="mTr-It-PV0"/>
-                        <outletCollection property="soundBTN" destination="bUE-0Y-jiZ" collectionClass="NSMutableArray" id="8y0-3E-OtN"/>
+                        <outlet property="startBTN" destination="0wA-v6-SwA" id="dBb-6Y-4nK"/>
+                        <outletCollection property="soundBTN" destination="rt6-ZN-NfF" collectionClass="NSMutableArray" id="Ctj-9Q-ZSR"/>
+                        <outletCollection property="soundBTN" destination="uFM-C7-j8E" collectionClass="NSMutableArray" id="fqB-wM-TqX"/>
+                        <outletCollection property="soundBTN" destination="bUE-0Y-jiZ" collectionClass="NSMutableArray" id="who-KI-bpN"/>
+                        <outletCollection property="soundBTN" destination="woo-sx-dmf" collectionClass="NSMutableArray" id="H5v-NH-3HW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -19,9 +19,9 @@ struct ContentView: View {
 //        .padding()
         ZStack{
             storyboardview().edgesIgnoringSafeArea(.all)
-            VStack{
-                Spacer()
-            }
+//            VStack{
+//                Spacer()
+//            }
         }
         
     }
