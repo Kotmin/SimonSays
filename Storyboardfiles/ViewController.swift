@@ -145,36 +145,36 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
 //    }
 
     func setupAudioFiles() {
-        let players = [sound1Player, sound2Player, sound3Player, sound4Player]
-        
-        for i in 0..<players.count {
-            if let soundFilePath = Bundle.main.path(forResource: "\(i+1)", ofType: "wav") {
-                let soundFileURL = URL(fileURLWithPath: soundFilePath)
+        for i in 1...4 {
+            guard let soundFilePath = Bundle.main.path(forResource: "\(i)", ofType: "wav"),
+                  let soundFileURL = URL(string: soundFilePath) else {
+                print("Error loading file \(i).wav")
+                continue
+            }
+            
+            do {
+                let player = try AVAudioPlayer(contentsOf: soundFileURL)
+                player.delegate = self
+                player.prepareToPlay() // Preloads audio data to reduce lag on first play.
                 
-                do {
-                    let player = try AVAudioPlayer(contentsOf: soundFileURL)
-                    player.delegate = self
-                    player.numberOfLoops = 0
-                    
-                    switch i {
-                    case 0:
-                        sound1Player = player
-                    case 1:
-                        sound2Player = player
-                    case 2:
-                        sound3Player = player
-                    case 3:
-                        sound4Player = player
-                    default:
-                        break
-                    }
-                    
-                } catch {
-                    print("Unable to initialize player for file \(i+1).wav: \(error)")
+                switch i {
+                case 1:
+                    sound1Player = player
+                case 2:
+                    sound2Player = player
+                case 3:
+                    sound3Player = player
+                case 4:
+                    sound4Player = player
+                default:
+                    break
                 }
+            } catch {
+                print("Unable to initialize player for file \(i).wav: \(error)")
             }
         }
     }
+
 
     
     
